@@ -1,0 +1,49 @@
+body{
+    padding-top: 72px;
+    margin: 0;
+    background: #09090b;
+    color: #faf9f5;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    translate: 0 -72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    height: 30px;
+    background: #4f52ff;
+    transition: 0.3s;
+}
+
+nav.visible{
+    top: 0;
+    translate: 0;
+}
+
+nav > h4{
+    width: 18px;
+    height: 18px;
+    background: #f9f9f9;
+    color: #4f52ff;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.divgigante{
+    width: 100vh;
+    height: 5000px;
+    background: steelblue;
+}
