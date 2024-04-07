@@ -1,0 +1,92 @@
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.buttons:hover .btn:not(:hover){
+    filter: blur(10px);
+}
+
+.btn{
+    background-color: #be86e8;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #000000;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: filter 0.3s, transform 0.3s;
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    filter: blur(0); 
+}
+
+.buttons:hover{
+    filter:blur(0);
+} */
+
+/*  lo comentado ejecuta una acción similar, pero si el mouse queda posicionado sobre el ul
+    los botones continuan desenfocados. Por ello se requiere de .js para un mejor manejo.
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.btn {
+    background-color: #be86e8;
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px #000000;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+
