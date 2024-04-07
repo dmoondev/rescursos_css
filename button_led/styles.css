@@ -17,9 +17,8 @@
 }
 
 .controls {
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 body{
