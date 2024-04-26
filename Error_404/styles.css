@@ -1,106 +1,6 @@
-.central-body {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.earth-moon {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    transform: translateX(-25%);
-}
-
-.object_moon {
-    position: absolute;
-    top: -50%; /* Ajusta este valor según tu preferencia */
-    left: 180%;
-    transform: translateX(-50%);
-}
-
-.object_rocket {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.box_astronaut {
-/*     position: absolute;
-    top: 60%;
-    right: 20%;
-    transform: translateY(-50%); */
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: move-astronaut 60s linear infinite;
-}
-
-/* Configuraciones de animación */
-
-.object_rocket {
-    position: absolute;
-
-    animation: rocket-movement 20s linear infinite;
-}
-
-.spin-earth {
-    animation: spin-earth 100s linear infinite;
-}
-
-.move-astronaut {
-    animation: move-astronaut 20s linear infinite;
-}
-
-.object_astronaut {
-    animation: move-astronaut 200s linear infinite;
-}
-
-/* Configuraciones adicionales */
-
-@keyframes rocket-movement { 
-    /* 100% { transform: translate(1200px, -600px); }  */
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(100vw, -100vh); }
-}
-
-@keyframes spin-earth { 
-    100% { transform: rotate(-360deg); } 
-}
-
-@keyframes move-astronaut {
-    /* 100% { transform: translate(-160px, -160px); } */
-    0%, 100% {
-        transform: translate(0vw, 0vh) rotate(360deg);
-        transition: 20s;
-    }
-    20% {
-        transform: translate(105vw, 55vh) rotate(120deg);
-        transition: 20s;
-    }
-    40% {
-        transform: translate(-70vw, 60vh) rotate(360deg);
-        transition: 20s;
-    }
-    60% {
-        transform: translate(-70vw, 30vh) rotate(360deg);
-        transition: 15s;
-    }
-    80%
-    {
-        transform: translate(200vw, 30vh) rotate(120deg);
-        transition: 15s;
-    }
-}
-
-@keyframes rotate-astronaut {
-    100% { transform: rotate(-720deg); }
-}
-
-/* Estilos restantes */
-
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500");
+
+image-404
 
 html, body {
     margin: 0;
@@ -112,32 +12,6 @@ html, body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.bg-purple {
-    background: url(http://salehriaz.com/404Page/img/bg_purple.png);
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position: left top;
-    height: 100%;
-    overflow: hidden;
-}
-
-.custom-navbar {
-    padding-top: 15px;
-}
-
-.brand-logo {
-    margin-left: 25px;
-    margin-top: 5px;
-    display: inline-block;
-}
-
-.navbar-links {
-    display: inline-block;
-    float: right;
-    margin-right: 15px;
-    text-transform: uppercase;
 }
 
 ul {
@@ -167,6 +41,32 @@ li a:hover {
     color: #ffcb39;
 }
 
+.bg-purple {
+    background: url(http://salehriaz.com/404Page/img/bg_purple.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: left top;
+    height: 100%;
+    overflow: hidden;
+}
+
+.custom-navbar {
+    padding-top: 15px;
+}
+
+.brand-logo {
+    margin-left: 25px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.navbar-links {
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
 .glowing_stars .star:nth-child(1) {
     top: 25%;
     left: 25%;
@@ -192,6 +92,140 @@ li a:hover {
     background: white;
     border-radius: 50%;
     animation: glow-star 1.5s infinite ease-in-out alternate;
+}
+
+.central-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.earth-moon {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translateX(-25%);
+}
+
+.object_moon {
+    position: absolute;
+    top: -50%; 
+    left: 180%;
+    transform: translateX(-50%);
+}
+
+.object_rocket {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box_astronaut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move-astronaut 60s linear infinite;
+}
+
+.object_rocket {
+    position: absolute;
+
+    animation: rocket-movement 20s linear infinite;
+}
+
+.spin-earth {
+    animation: spin-earth 100s linear infinite;
+}
+
+.move-astronaut {
+    animation: move-astronaut 200s linear infinite;
+}
+
+.object_astronaut {
+    animation: move-astronaut 200s linear infinite;
+}
+
+.btn-go-home{
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #ffcb39;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #ffbf0e;
+    font-weight: normal;
+    transform: scaleX(1.0) scaleY(1.0);
+    transition: 0.5s;
+}
+
+.btn-go-home:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+@keyframes rocket-movement { 
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(100vw, -100vh); }
+}
+
+@keyframes spin-earth { 
+    100% { transform: rotate(-360deg); } 
+}
+
+@keyframes move-astronaut {
+    /* 100% { transform: translate(-160px, -160px); } */
+/*     0%, 100% {
+        transform: translateX(0vw) translateY(0vh) rotate(90deg);
+        transition: 20s;
+    }
+    20% {
+        transform: translateX(105vw) translateY(0vh) rotate(60deg);
+        transition: 20s;
+    }
+    40% {
+        transform: translateX(70vw) translateY(60vh) rotate(45deg);
+        transition: 20s;
+    }
+    60% {
+        transform: translateX(-70vw) translateY(30vh) rotate(90deg);
+        transition: 20s;
+    }
+    80%
+    {
+        transform: translateX(100vw) translateY(50vh) rotate(45deg);
+        transition: 15s;
+    } */
+    0%, 100% {
+        transform: translateX(0) translateY(0) rotate(90deg);
+    }
+    20% {
+        transform: translateX(50vw) translateY(10vh) rotate(60deg);
+    }
+    40% {
+        transform: translateX(10vw) translateY(25vh) rotate(45deg);
+    }
+    60% {
+        transform: translateX(15vw) translateY(50vh) rotate(90deg);
+    }
+    80% {
+        transform: translateX(45vw) translateY(20vh) rotate(45deg);
+    }
+}
+
+@keyframes rotate-astronaut {
+    100% { transform: rotate(-720deg); }
 }
 
 @keyframes glow-star {
